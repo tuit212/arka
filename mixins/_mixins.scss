@@ -1,0 +1,38 @@
+@mixin center ($js) {
+    display: flex;
+    align-items: center;
+    justify-content: $js;
+}
+
+@mixin text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    color: #011F3A;
+}
+
+@mixin btn {
+    display: block;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.96px;
+    text-align: center;
+    border: 1px solid #3D5675;
+    transition: all 0.5s ease;
+    color: #FFFFFF;
+}
+
+@mixin btn_hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+@mixin title {
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+}

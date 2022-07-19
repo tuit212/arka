@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Roboto 400";
+  src: local("(*%$@#@"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto 700";
+  src: local("(*%$@#@"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #EEEEEE;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=main.css.map */

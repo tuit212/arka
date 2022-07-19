@@ -1,0 +1,97 @@
+.contact-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.contact-section .img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.contact-section .img::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg , #e91e63, #03a9f4 );
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+.contact-section .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-section .content{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .content .content__form{
+    width: 50%;
+}
+.contact-section .content .content__form h2{
+    color: #607d8b;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;letter-spacing: 1px;
+    border-bottom: 4px solid #ff4584;
+}
+.contact-section .content .content__form .content__input{
+    margin-bottom: 20px;
+}
+.contact-section .content .content__form .content__input span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.contact-section .content .content__form .content__input input{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.contact-section .content .content__form .content__input input[type="submit"]{
+    background: #ff4584;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contact-section .content .content__form .content__input input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.content__remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+.contact-section .content .content__form .content__input p{
+    color: #607d8b;
+}
+.contact-section .content .content__form .content__input p a{
+    color: #ff4584;
+}
