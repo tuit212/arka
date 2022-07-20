@@ -467,3 +467,100 @@ body{
     background: #F2F3F4;
     padding: 60px 0 80px 0;
 }
+.footer-list{
+    @include center(space-between);
+    align-items: flex-start;
+}
+.footer__item:nth-child(1){
+    width: 85px;
+}
+.footer__item:nth-child(2){
+    width: 164px;
+}
+.footer__item:nth-child(3){
+    width: 164px;
+}
+.footer__item:nth-child(4){
+    width: 170px;
+}
+.footer__item:nth-child(5){
+    width: 280px;
+}
+.footer-item-lists__items{
+    margin-bottom: 17px;
+}
+.footer-item-lists__items a{
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 15px;
+    color: $all__btn-back-color;
+}
+.footer-item-lists__items input{
+    width: 100%;
+    padding: 11px 18px;
+    border-radius: 34px;
+    border: none;
+    background-color: $all__back-color;
+}
+.footer-item-lists__items input::placeholder{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(61, 86, 117, 0.4);
+}
+.footer-item-lists__items input:invalid{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(61, 86, 117, 0.8);
+}
+.footer-item-lists__items button{
+    background-color: $all__btn-back-color;
+    border-radius: $all__btn_radius;
+    display: block;
+    width: 187px;
+    margin-top: 15px;
+    padding: 12px 0;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    border: 1px solid #3D5675;
+    transition: all 0.5s ease;
+}
+.footer-item-lists__items button:hover{
+    background-color: $all__back-color;
+    color: $all__btn-back-color;
+}
+.footer-item-lists__items a img{
+    transition: all 0.5s ease;
+}
+.footer-item-lists__items a img:hover{
+    transform: scale(1.2);
+}
+.footer-item-lists__items{
+    position: relative;
+}
+.footer-item-lists__items a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #FFCA3A;
+    left: 0;
+    bottom: -1px;
+    transition: all 0.5s linear;
+}
+.footer-item-lists__items a:hover{
+    color: #FFCA3A;
+}
+.footer-item-lists__items a:hover::after{
+    width: 50%;
+}
+.footer-item-lists__items-ps a:hover:after{
+    width: 0;
+}
